@@ -1,0 +1,363 @@
+
+.delivery-contact-section {
+  padding: 100px 20px;
+  background: #f8f9fb;
+  font-family: "Inter", sans-serif;
+}
+
+.delivery-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.delivery-contact-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.delivery-contact-tag {
+  display: inline-block;
+  color: #ff6b35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.delivery-contact-heading h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #182230;
+  margin: 0 0 18px;
+}
+
+.delivery-contact-heading h2 span {
+  color: #ff6b35;
+}
+
+.delivery-contact-heading p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #687386;
+  margin: 0;
+}
+
+/* Main Grid */
+
+.delivery-contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Contact Information */
+
+.delivery-contact-info {
+  padding: 35px 0;
+}
+
+.delivery-contact-info-header h3,
+.delivery-contact-form-header h3 {
+  font-size: 25px;
+  font-weight: 750;
+  color: #182230;
+  margin: 0 0 12px;
+}
+
+.delivery-contact-info-header p,
+.delivery-contact-form-header p {
+  color: #687386;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.delivery-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.delivery-contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.delivery-contact-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff0e9;
+  border-radius: 12px;
+  color: #ff6b35;
+}
+
+.delivery-contact-icon span {
+  font-size: 25px;
+}
+
+.delivery-contact-detail h4 {
+  font-size: 15px;
+  color: #182230;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.delivery-contact-detail p {
+  color: #687386;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Social Links */
+
+.delivery-contact-social {
+  margin-top: 40px;
+}
+
+.delivery-contact-social h4 {
+  font-size: 16px;
+  color: #182230;
+  margin: 0 0 15px;
+}
+
+.delivery-contact-social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.delivery-contact-social-links a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff;
+  color: #182230;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.delivery-contact-social-links a:hover {
+  background: #ff6b35;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Contact Form */
+
+.delivery-contact-form-wrapper {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 45px rgba(24, 34, 48, 0.06);
+}
+
+.delivery-contact-form-header {
+  margin-bottom: 30px;
+}
+
+.delivery-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.delivery-contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.delivery-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.delivery-contact-field label {
+  font-size: 14px;
+  font-weight: 650;
+  color: #273345;
+}
+
+.delivery-contact-field input,
+.delivery-contact-field select,
+.delivery-contact-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #e2e6ec;
+  border-radius: 9px;
+  background: #fff;
+  color: #182230;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.delivery-contact-field input,
+.delivery-contact-field select {
+  min-height: 50px;
+}
+
+.delivery-contact-field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.delivery-contact-field input:focus,
+.delivery-contact-field select:focus,
+.delivery-contact-field textarea:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.delivery-contact-submit {
+  width: 100%;
+  min-height: 54px;
+  border: none;
+  border-radius: 9px;
+  background: #ff6b35;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delivery-contact-submit:hover {
+  background: #e95725;
+  transform: translateY(-2px);
+}
+
+/* Bottom CTA */
+
+.delivery-contact-cta {
+  margin-top: 65px;
+  padding: 35px 40px;
+  background: #182230;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.delivery-contact-cta h3 {
+  color: #fff;
+  font-size: 23px;
+  margin: 0 0 9px;
+}
+
+.delivery-contact-cta p {
+  color: #c4ccd7;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.delivery-contact-cta-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 23px;
+  background: #ff6b35;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.delivery-contact-cta-btn:hover {
+  background: #e95725;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .delivery-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .delivery-contact-info {
+    padding: 10px 0;
+  }
+
+  .delivery-contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .delivery-contact-section {
+    padding: 70px 18px;
+  }
+
+  .delivery-contact-heading {
+    margin-bottom: 35px;
+  }
+
+  .delivery-contact-heading h2 {
+    font-size: 31px;
+  }
+
+  .delivery-contact-heading p {
+    font-size: 14px;
+  }
+
+  .delivery-contact-details {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .delivery-contact-form-wrapper {
+    padding: 25px 18px;
+  }
+
+  .delivery-contact-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-contact-cta {
+    margin-top: 40px;
+    padding: 28px 22px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delivery-contact-cta h3 {
+    font-size: 21px;
+  }
+
+  .delivery-contact-cta-btn {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,385 @@
+
+/* ===========================
+   WHY CHOOSE US SECTION
+=========================== */
+
+.delivery-why {
+  width: 100%;
+  padding: 110px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.delivery-why-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 85px;
+}
+
+/* ===========================
+   LEFT IMAGE
+=========================== */
+
+.delivery-why-visual {
+  position: relative;
+  padding: 0 25px 25px 0;
+}
+
+.delivery-why-image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.delivery-why-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.delivery-why-image-wrapper:hover .delivery-why-image {
+  transform: scale(1.04);
+}
+
+/* Floating Card */
+
+.delivery-why-floating-card {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 65px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  background: #14243a;
+  color: #ffffff;
+  padding: 20px 23px;
+  border-radius: 12px;
+
+  box-shadow: 0 12px 30px rgba(20, 36, 58, 0.2);
+}
+
+.delivery-why-floating-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff6b35;
+  color: #ffffff;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.delivery-why-floating-card strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.delivery-why-floating-card span {
+  display: block;
+  color: #d0d5dd;
+  font-size: 11px;
+}
+
+/* Decoration */
+
+.delivery-why-decoration {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+
+  width: 140px;
+  height: 140px;
+
+  background: #fff0e9;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* ===========================
+   RIGHT CONTENT
+=========================== */
+
+.delivery-why-content {
+  position: relative;
+}
+
+.delivery-why-label {
+  display: inline-block;
+  color: #ff6b35;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  margin-bottom: 18px;
+}
+
+.delivery-why-content h2 {
+  color: #14243a;
+  font-size: clamp(35px, 4vw, 49px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+
+  margin: 0 0 20px;
+}
+
+.delivery-why-content h2 span {
+  color: #ff6b35;
+}
+
+.delivery-why-intro {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.9;
+
+  margin: 0 0 30px;
+}
+
+/* ===========================
+   BENEFITS
+=========================== */
+
+.delivery-why-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-bottom: 32px;
+}
+
+.delivery-why-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.delivery-why-benefit-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0e9;
+  border-radius: 12px;
+
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.delivery-why-benefit:hover .delivery-why-benefit-icon {
+  background: #ff6b35;
+  transform: translateY(-3px);
+}
+
+.delivery-why-benefit-text h3 {
+  color: #14243a;
+  font-size: 16px;
+  font-weight: 750;
+  margin: 2px 0 7px;
+}
+
+.delivery-why-benefit-text p {
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===========================
+   CTA BUTTON
+=========================== */
+
+.delivery-why-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 24px;
+
+  background: #ff6b35;
+  color: #ffffff;
+
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.delivery-why-button:hover {
+  background: #e95420;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1024px) {
+  .delivery-why {
+    padding: 85px 0;
+  }
+
+  .delivery-why-container {
+    gap: 45px;
+  }
+
+  .delivery-why-image-wrapper {
+    height: 520px;
+  }
+
+  .delivery-why-content h2 {
+    font-size: 38px;
+  }
+
+  .delivery-why-benefits {
+    gap: 18px;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .delivery-why {
+    padding: 70px 0;
+  }
+
+  .delivery-why-container {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .delivery-why-visual {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .delivery-why-image-wrapper {
+    height: 450px;
+  }
+
+  .delivery-why-content h2 {
+    font-size: 38px;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+  .delivery-why {
+    padding: 55px 0;
+  }
+
+  .delivery-why-container {
+    width: 90%;
+    gap: 45px;
+  }
+
+  .delivery-why-image-wrapper {
+    height: 350px;
+  }
+
+  .delivery-why-content h2 {
+    font-size: 33px;
+  }
+
+  .delivery-why-intro {
+    font-size: 14px;
+  }
+
+  .delivery-why-benefits {
+    gap: 20px;
+  }
+
+  .delivery-why-benefit {
+    gap: 12px;
+  }
+
+  .delivery-why-benefit-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 19px;
+  }
+
+  .delivery-why-benefit-text h3 {
+    font-size: 15px;
+  }
+
+  .delivery-why-benefit-text p {
+    font-size: 12px;
+  }
+
+  .delivery-why-floating-card {
+    padding: 15px;
+    bottom: 45px;
+    margin-right: 14px !important;
+  }
+
+  .delivery-why-decoration {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/* Google Material Symbols */
+
+.delivery-why-benefit-icon .material-symbols-rounded {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff6b35;
+  line-height: 1;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 500,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.delivery-why-benefit:hover .delivery-why-benefit-icon {
+  background: #ff6b35;
+  transform: translateY(-3px);
+}
+
+.delivery-why-benefit:hover .material-symbols-rounded {
+  color: #ffffff;
+}
+
+/* Floating Card Check Icon */
+
+.delivery-why-floating-icon .material-symbols-rounded {
+  font-size: 23px;
+  color: #ffffff;
+  line-height: 1;
+  font-variation-settings: "FILL" 1;
+}
+

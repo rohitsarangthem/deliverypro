@@ -1,0 +1,289 @@
+
+/* ===========================
+   DELIVERY SERVICES SECTION
+=========================== */
+
+.delivery-services {
+  width: 100%;
+  padding: 100px 0;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.delivery-services-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+
+.delivery-services-heading {
+  max-width: 700px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.delivery-services-label {
+  display: inline-block;
+  color: #ff6b35;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.delivery-services-heading h2 {
+  color: #14243a;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin: 0 0 20px;
+}
+
+.delivery-services-heading h2 span {
+  color: #ff6b35;
+}
+
+.delivery-services-heading p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 580px;
+}
+
+/* Services Grid */
+
+.delivery-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* Service Card */
+
+.delivery-service-card {
+  background: #ffffff;
+  padding: 32px;
+  border: 1px solid #edf0f3;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.delivery-service-card:hover {
+  transform: translateY(-7px);
+  border-color: #ff6b35;
+  box-shadow: 0 15px 40px rgba(20, 36, 58, 0.07);
+}
+
+/* Card Top */
+
+.delivery-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.delivery-service-icon {
+  width: 58px;
+  height: 58px;
+  background: #fff0e9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  transition: all 0.3s ease;
+}
+
+.delivery-service-card:hover .delivery-service-icon {
+  background: #ff6b35;
+  transform: rotate(-5deg);
+}
+
+.delivery-service-number {
+  color: #d0d5dd;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Card Content */
+
+.delivery-service-card h3 {
+  color: #14243a;
+  font-size: 20px;
+  font-weight: 750;
+  margin: 0 0 14px;
+}
+
+.delivery-service-card p {
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.8;
+  min-height: 76px;
+  margin: 0 0 25px;
+}
+
+/* Learn More */
+
+.delivery-service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff6b35;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.delivery-service-link:hover {
+  gap: 16px;
+}
+
+/* Bottom CTA */
+
+.delivery-services-bottom {
+  margin-top: 45px;
+  padding: 25px 30px;
+  background: #14243a;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.delivery-services-bottom p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.delivery-services-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 22px;
+  background: #ff6b35;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.delivery-services-bottom a:hover {
+  background: #e95420;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1024px) {
+  .delivery-services {
+    padding: 80px 0;
+  }
+
+  .delivery-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .delivery-service-card {
+    padding: 28px;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .delivery-services {
+    padding: 70px 0;
+  }
+
+  .delivery-services-heading {
+    margin-bottom: 40px;
+  }
+
+  .delivery-services-heading h2 {
+    font-size: 36px;
+  }
+
+  .delivery-services-grid {
+    gap: 16px;
+  }
+
+  .delivery-service-card {
+    padding: 24px;
+  }
+
+  .delivery-services-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .delivery-services {
+    padding: 55px 0;
+  }
+
+  .delivery-services-container {
+    width: 90%;
+  }
+
+  .delivery-services-heading h2 {
+    font-size: 32px;
+  }
+
+  .delivery-services-heading p {
+    font-size: 14px;
+  }
+
+  .delivery-services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .delivery-service-card {
+    padding: 25px;
+  }
+
+  .delivery-service-card p {
+    min-height: auto;
+  }
+
+  .delivery-services-bottom {
+    gap: 18px;
+  }
+
+  .delivery-services-bottom p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.delivery-service-icon svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  color: #FF6B35;
+  transition: color 0.3s ease;
+}
+
+.delivery-service-card:hover .delivery-service-icon svg {
+  color: #ffffff;
+}

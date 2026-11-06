@@ -1,0 +1,189 @@
+/* Operations Section */
+.delivery-operations {
+  width: 100%;
+  padding: 100px 0;
+  background: #f8f9fb;
+  overflow: hidden;
+}
+
+.delivery-operations-container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.delivery-operations-heading {
+  max-width: 680px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.delivery-operations-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #ff6b35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.delivery-operations-heading h2 {
+  margin: 0 0 18px;
+  color: #14243a;
+  font-size: 42px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.delivery-operations-heading h2 span {
+  color: #ff6b35;
+}
+
+.delivery-operations-heading p {
+  max-width: 580px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Cards Grid */
+.delivery-operations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.delivery-operations-card {
+  position: relative;
+  padding: 30px 25px;
+  background: #ffffff;
+  border: 1px solid #edf0f3;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.delivery-operations-card:hover {
+  transform: translateY(-7px);
+  border-color: #ff6b35;
+  box-shadow: 0 15px 35px rgba(20, 36, 58, 0.08);
+}
+
+/* Card Top */
+.delivery-operations-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.delivery-operations-number {
+  color: #d8dde4;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.delivery-operations-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #fff0e9;
+  transition: all 0.3s ease;
+}
+
+.delivery-operations-icon .material-symbols-rounded {
+  color: #ff6b35;
+  font-size: 27px;
+  line-height: 1;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 500,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.delivery-operations-card:hover .delivery-operations-icon {
+  background: #ff6b35;
+}
+
+.delivery-operations-card:hover .material-symbols-rounded {
+  color: #ffffff;
+}
+
+/* Card Content */
+.delivery-operations-card h3 {
+  margin: 0 0 12px;
+  color: #14243a;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.delivery-operations-card p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Bottom Line */
+.delivery-operations-card-line {
+  width: 35px;
+  height: 3px;
+  margin-top: 25px;
+  border-radius: 5px;
+  background: #ff6b35;
+  transition: width 0.3s ease;
+}
+
+.delivery-operations-card:hover .delivery-operations-card-line {
+  width: 65px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .delivery-operations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .delivery-operations-heading h2 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .delivery-operations {
+    padding: 70px 0;
+  }
+
+  .delivery-operations-heading {
+    margin-bottom: 40px;
+  }
+
+  .delivery-operations-heading h2 {
+    font-size: 30px;
+  }
+
+  .delivery-operations-heading p {
+    font-size: 14px;
+  }
+
+  .delivery-operations-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .delivery-operations-card {
+    padding: 25px 22px;
+  }
+
+  .delivery-operations-card-top {
+    margin-bottom: 25px;
+  }
+}

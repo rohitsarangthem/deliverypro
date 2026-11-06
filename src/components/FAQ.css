@@ -1,0 +1,274 @@
+
+/* ================================
+   FAQ SECTION
+================================ */
+
+.delivery-faq {
+  width: 100%;
+  padding: 100px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.delivery-faq-container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.delivery-faq-heading {
+  max-width: 680px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.delivery-faq-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #ff6b35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.delivery-faq-heading h2 {
+  margin: 0 0 18px;
+  color: #14243a;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.delivery-faq-heading h2 span {
+  color: #ff6b35;
+}
+
+.delivery-faq-heading p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Main Layout */
+
+.delivery-faq-content {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  align-items: start;
+  gap: 45px;
+}
+
+/* FAQ List */
+
+.delivery-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.delivery-faq-item {
+  background: #f8f9fb;
+  border: 1px solid #edf0f4;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.delivery-faq-item.active {
+  background: #ffffff;
+  border-color: rgba(255, 107, 53, 0.45);
+}
+
+.delivery-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 21px 23px;
+  color: #14243a;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.delivery-faq-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  color: #ff6b35;
+  background: #fff0e9;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.delivery-faq-item.active .delivery-faq-toggle {
+  color: #ffffff;
+  background: #ff6b35;
+}
+
+/* Accordion Answer */
+
+.delivery-faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.delivery-faq-item.active .delivery-faq-answer {
+  grid-template-rows: 1fr;
+}
+
+.delivery-faq-answer > div {
+  overflow: hidden;
+}
+
+.delivery-faq-answer p {
+  margin: 0;
+  padding: 0 23px 22px;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Contact Card */
+
+.delivery-faq-contact {
+  padding: 35px 30px;
+  background: #14243a;
+  border-radius: 14px;
+}
+
+.delivery-faq-contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 25px;
+  background: rgba(255, 107, 53, 0.15);
+  border-radius: 13px;
+}
+
+.delivery-faq-contact-icon .material-symbols-rounded {
+  color: #ff8b60;
+  font-size: 30px;
+}
+
+.delivery-faq-contact h3 {
+  margin: 0 0 13px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.delivery-faq-contact p {
+  margin: 0 0 25px;
+  color: #c0c9d6;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.delivery-faq-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 19px;
+  color: #ffffff;
+  background: #ff6b35;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.delivery-faq-button:hover {
+  color: #ffffff;
+  background: #e95725;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+  .delivery-faq-content {
+    grid-template-columns: 1fr 0.7fr;
+    gap: 25px;
+  }
+
+  .delivery-faq-contact {
+    padding: 28px 22px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .delivery-faq {
+    padding: 75px 0;
+  }
+
+  .delivery-faq-heading {
+    margin-bottom: 38px;
+  }
+
+  .delivery-faq-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .delivery-faq-contact {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-faq {
+    padding: 60px 0;
+  }
+
+  .delivery-faq-heading h2 {
+    font-size: 30px;
+  }
+
+  .delivery-faq-heading p {
+    font-size: 14px;
+  }
+
+  .delivery-faq-question {
+    padding: 17px;
+    font-size: 14px;
+  }
+
+  .delivery-faq-answer p {
+    padding: 0 17px 18px;
+    font-size: 13px;
+  }
+
+  .delivery-faq-contact {
+    padding: 25px 22px;
+  }
+
+  .delivery-faq-contact h3 {
+    font-size: 20px;
+  }
+}

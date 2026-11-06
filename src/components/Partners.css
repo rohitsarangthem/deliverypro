@@ -1,0 +1,140 @@
+
+/* ===========================
+   DELIVERY PARTNERS SECTION
+=========================== */
+
+.delivery-partners {
+  width: 100%;
+  padding: 65px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.delivery-partners-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.delivery-partners-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.delivery-partners-heading span {
+  display: block;
+  color: #ff6b35;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.delivery-partners-heading h2 {
+  color: #14243a;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Partner Logos */
+
+.delivery-partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.delivery-partner-logo {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  color: #98a2b3;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.delivery-partner-logo:hover {
+  color: #ff6b35;
+  transform: translateY(-3px);
+}
+
+.partner-1 {
+  letter-spacing: -1.5px;
+}
+
+.partner-2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.partner-3 {
+  font-size: 22px;
+}
+
+.partner-4 {
+  font-size: 24px;
+}
+
+.partner-5 {
+  font-style: italic;
+}
+
+.partner-6 {
+  letter-spacing: 2px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .delivery-partners {
+    padding: 50px 0;
+  }
+
+  .delivery-partners-heading h2 {
+    font-size: 21px;
+  }
+
+  .delivery-partners-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 15px;
+  }
+
+  .delivery-partner-logo {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .delivery-partners {
+    padding: 40px 0;
+  }
+
+  .delivery-partners-heading {
+    margin-bottom: 30px;
+  }
+
+  .delivery-partners-heading h2 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .delivery-partners-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+  }
+
+  .delivery-partner-logo {
+    font-size: 19px;
+  }
+}

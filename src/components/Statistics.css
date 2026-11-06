@@ -1,0 +1,161 @@
+
+/* ================================
+   STATISTICS SECTION
+================================ */
+
+.delivery-stats {
+  width: 100%;
+  padding: 100px 0;
+  background: #14243a;
+  overflow: hidden;
+}
+
+.delivery-stats-container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.delivery-stats-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.delivery-stats-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #ff8b60;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.delivery-stats-heading h2 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.delivery-stats-heading h2 span {
+  color: #ff6b35;
+}
+
+.delivery-stats-heading p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #b9c2d0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Statistics Grid */
+
+.delivery-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.delivery-stats-card {
+  padding: 35px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.delivery-stats-card:hover {
+  transform: translateY(-7px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.delivery-stats-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 22px;
+  background: rgba(255, 107, 53, 0.15);
+  border-radius: 13px;
+}
+
+.delivery-stats-icon .material-symbols-rounded {
+  color: #ff8b60;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.delivery-stats-card h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: clamp(30px, 3vw, 38px);
+  font-weight: 750;
+}
+
+.delivery-stats-card p {
+  margin: 0;
+  color: #b9c2d0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .delivery-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery-stats {
+    padding: 75px 0;
+  }
+
+  .delivery-stats-heading {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-stats {
+    padding: 60px 0;
+  }
+
+  .delivery-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .delivery-stats-card {
+    padding: 25px 12px;
+  }
+
+  .delivery-stats-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 16px;
+  }
+
+  .delivery-stats-icon .material-symbols-rounded {
+    font-size: 23px;
+  }
+
+  .delivery-stats-card h3 {
+    font-size: 27px;
+  }
+
+  .delivery-stats-card p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,252 @@
+
+.delivery-footer {
+  background: #182230;
+  color: #ffffff;
+  padding: 75px 20px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.delivery-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main Footer */
+
+.delivery-footer-main {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 45px;
+  padding-bottom: 65px;
+}
+
+/* Brand */
+
+.delivery-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.delivery-footer-logo > span:first-child {
+  font-size: 32px;
+  color: #ff6b35;
+}
+
+.delivery-footer-logo > span:last-child span {
+  color: #ff6b35;
+}
+
+.delivery-footer-brand > p {
+  max-width: 280px;
+  color: #aab4c2;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Social Icons */
+
+.delivery-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.delivery-footer-socials a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.delivery-footer-socials a:hover {
+  background: #ff6b35;
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+/* Footer Columns */
+
+.delivery-footer-column h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 5px 0 25px;
+}
+
+.delivery-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.delivery-footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.delivery-footer-column ul li a {
+  color: #aab4c2;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.delivery-footer-column ul li a:hover {
+  color: #ff6b35;
+  padding-left: 5px;
+}
+
+/* Contact Information */
+
+.delivery-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.delivery-footer-contact-item > span {
+  color: #ff6b35;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.delivery-footer-contact-item p,
+.delivery-footer-contact-item a {
+  color: #aab4c2;
+  font-size: 13px;
+  line-height: 1.6;
+  text-decoration: none;
+  margin: 0;
+  transition: 0.3s ease;
+  overflow-wrap: anywhere;
+}
+
+.delivery-footer-contact-item a:hover {
+  color: #ff6b35;
+}
+
+/* Bottom Bar */
+
+.delivery-footer-bottom {
+  border-top: 1px solid #344153;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.delivery-footer-bottom > p {
+  color: #aab4c2;
+  font-size: 13px;
+  margin: 0;
+}
+
+.delivery-footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.delivery-footer-legal a {
+  color: #aab4c2;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.delivery-footer-legal a:hover {
+  color: #ff6b35;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .delivery-footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .delivery-footer {
+    padding: 55px 20px 0;
+  }
+
+  .delivery-footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+    padding-bottom: 40px;
+  }
+
+  .delivery-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .delivery-footer-brand > p {
+    max-width: 100%;
+  }
+
+  .delivery-footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .delivery-footer-column ul li {
+    margin-bottom: 13px;
+  }
+
+  .delivery-footer-column ul li a {
+    font-size: 13px;
+  }
+
+  .delivery-footer-bottom {
+    padding: 22px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .delivery-footer-legal {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .delivery-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-footer-brand {
+    grid-column: auto;
+  }
+}
+
+.delivery-footer-contact-item > svg {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  color: #ff6b35;
+}
+
+.delivery-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
